@@ -1,0 +1,122 @@
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	background: #f6f6f6;
+	display: flex;
+	flex-grow: 1;
+	min-height: 100%;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#logo{
+	display: none;
+	font-weight: 400;
+	font-size: 60px;
+	color: #333;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	font-family: 'Pacifico', cursive;
+	color: #479df4;
+}
+
+h1{
+	font-weight: 100;
+	font-size: 26px;
+	line-height: 46px;
+	color: #333;
+	margin-top: 10px;
+}
+
+h2{
+	font-weight: 600;
+	font-size: 46px;
+	color: #333;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+input[type="text"]{
+	box-sizing: border-box;
+	padding: 10px;
+	border: 1px solid #d0d0d0;
+	border-radius: 3px;
+	width: 300px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+input[type="text"]:focus{
+	border-color: #479df4;
+	outline: none;
+}
+
+#name-field{
+	width: 140px;
+	margin-right: 0;
+	border-right: 0;
+	border-radius: 3px 0 0 3px;
+	border-right: 1px dotted #d0d0d0;
+}
+
+#address-field{
+	margin-right: 0;
+	border-right: 0;
+	border-left: 0;
+	border-radius: 0;
+}
+
+#post-code-field{
+	width: 120px;
+	margin-left: 0;
+	border-radius: 0 3px 3px 0;
+	border-left: 1px dotted #d0d0d0;
+}
+
+button{
+	box-sizing: border-box;
+	padding: 10px;
+	border: 1px solid #479df4 !important;
+	border-radius: 3px;
+	width: 130px;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	cursor: pointer;
+	background-color: #479df4;
+	color: #fff;
+	outline: none !important;
+}
+
+button:hover{
+	background-color: #4090e9;
+}
+
+form{
+	padding-bottom: 90px;
+}
+
+#envelope-img{
+	display: inline-block;
+	display: none;
+	height: 30px;
+	margin-bottom: 0px;
+}
+
+.contact{
+	display: none;
+	color: #d0d0d0;
+	font-weight: 300;
+	font-size: 11px;
+}
