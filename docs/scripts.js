@@ -5,7 +5,7 @@ $(document).ready(function(){
 		$name = $("#name-field").val();
 		
 		$.ajax({
-			url: "https://formspree.io/theohricketts@gmail.com", 
+			url: "https://formspree.io/theo@postary.com", 
 			method: "POST",
 			data: {message: "Address sign up name ( " + $name + " )" + $address},
 			dataType: "json"
