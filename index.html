@@ -15,8 +15,13 @@
 				<h1>We're building a tool to make it<br>effortless to send postcard campaigns to your customers</h1>
 				<h2><img id="envelope-img" src="envelope.png" /> Receive your free postcard</h2>
 				<form id="address-form" method="POST">
-					<input id="name-field" name="name" type="text" placeholder="You're name" autofocus /><input id="address-field" name="address" type="text" placeholder="Enter your address" /><input id="post-code-field" name="post-code" type="text" placeholder="Post code" />
-					<button onclick="submit">Send</button>
+					<div id="address-field-wrap" class="field-wrap">
+						<input id="address-field" name="address" type="text" placeholder="Enter your address" autofocus /><input id="post-code-field" name="post-code" type="text" placeholder="Post code" />
+					</div>
+					<div id="email-field-wrap" class="field-wrap">
+						<input id="name-field" name="name" type="text" placeholder="You're name" /><input id="email-field" name="email" type="email" placeholder="example@gmail.com" />
+					</div>
+					<button disabled id="send-button" onclick="submit">Send</button>
 				</form>
 				<span class="contact">Get in touch theo@postary.com</span>.
 			</div>

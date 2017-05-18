@@ -46,7 +46,7 @@ h2{
 	margin-bottom: 30px;
 }
 
-input[type="text"]{
+input[type="text"], input[type="email"]{
 	box-sizing: border-box;
 	padding: 10px;
 	border: 1px solid #d0d0d0;
@@ -57,7 +57,7 @@ input[type="text"]{
 	font-weight: 300;
 }
 
-input[type="text"]:focus{
+input[type="text"]:focus, input[type="email"]:focus{
 	border-color: #479df4;
 	outline: none;
 }
@@ -73,8 +73,7 @@ input[type="text"]:focus{
 #address-field{
 	margin-right: 0;
 	border-right: 0;
-	border-left: 0;
-	border-radius: 0;
+	border-radius: 3px 0 0 3px;
 }
 
 #post-code-field{
@@ -84,10 +83,20 @@ input[type="text"]:focus{
 	border-left: 1px dotted #d0d0d0;
 }
 
+#email-field{
+	margin-left: 0;
+	border-radius: 0 3px 3px 0;
+	border-left: 0;
+}
+
+.field-wrap{
+	margin-bottom: 30px;
+}
+
 button{
 	box-sizing: border-box;
 	padding: 10px;
-	border: 1px solid #479df4 !important;
+	border: 0;
 	border-radius: 3px;
 	width: 130px;
 	font-size: 18px;
@@ -97,6 +106,13 @@ button{
 	background-color: #479df4;
 	color: #fff;
 	outline: none !important;
+	transition: background-color 0.5s ease;
+}
+
+button:disabled, button:disabled:hover{
+	background-color: #f0f0f0;
+	border: 0;
+	color: #ddd;
 }
 
 button:hover{
@@ -119,4 +135,9 @@ form{
 	color: #d0d0d0;
 	font-weight: 300;
 	font-size: 11px;
+}
+
+#email-field-wrap{
+	height: 0;
+	overflow: hidden;
 }
